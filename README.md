@@ -29,18 +29,18 @@ This project includes a simple HTML structure with a loader animation. Below is 
         </div>
     </body>
 </html>
+```
+## Breakdown
+1. DOCTYPE Declaration: Specifies the document type and version of HTML being used (HTML5).
+2. HTML Tag with Language Attribute: Encloses the entire HTML document and specifies the language as English.
+3. Head Section: Contains metadata and links to external resources.
+4. Body Section: Contains the main content of the webpage, including the title and loader animation.
 
-Breakdown
-DOCTYPE Declaration: Specifies the document type and version of HTML being used (HTML5).
-HTML Tag with Language Attribute: Encloses the entire HTML document and specifies the language as English.
-Head Section: Contains metadata and links to external resources.
-Body Section: Contains the main content of the webpage, including the title and loader animation.
-
-## CSS Styles
+## CSS
 
 This project includes custom CSS styles for a loader animation and page layout. Below is a breakdown of the CSS code:
 
-```css
+``` css
 /* Resetting default margin, padding, and setting box-sizing */
 * {
     margin: 0;
@@ -122,16 +122,16 @@ p {
     position: relative;
     left: 200px;
 }
-
-Breakdown
-Global Styles: Resets default margin and padding, sets box-sizing to border-box.
-Body Styles: Centers content, sets minimum height to 100vh, and applies a black background.
-Loader Styles: Defines size, rotation, background gradient, and animation for the loader.
-Keyframes for Animation: Creates a hue-rotation animation.
-Loader Inner Circle: Adds an inner circle to the loader.
-Loader Outer Glow: Adds a glowing effect around the loader.
-Heading Styles: Styles the main heading.
-Paragraph Styles: Styles the paragraph.
-Title Positioning: Positions the title.
+```
+## Breakdown
+1. Global Styles: Resets default margin and padding, sets box-sizing to border-box.
+2. Body Styles: Centers content, sets minimum height to 100vh, and applies a black background.
+3. Loader Styles: Defines size, rotation, background gradient, and animation for the loader.
+4. Keyframes for Animation: Creates a hue-rotation animation.
+5. Loader Inner Circle: Adds an inner circle to the loader.
+6. Loader Outer Glow: Adds a glowing effect around the loader.
+7. Heading Styles: Styles the main heading.
+8. Paragraph Styles: Styles the paragraph.
+9. Title Positioning: Positions the title.
 
 
