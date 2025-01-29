@@ -36,8 +36,102 @@ HTML Tag with Language Attribute: Encloses the entire HTML document and specifie
 Head Section: Contains metadata and links to external resources.
 Body Section: Contains the main content of the webpage, including the title and loader animation.
 
+## CSS Styles
+
+This project includes custom CSS styles for a loader animation and page layout. Below is a breakdown of the CSS code:
+
+```css
+/* Resetting default margin, padding, and setting box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body to center content and set background color */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+/* Loader styles */
+.loader {
+    position: relative;
+    width: 10px;
+    height: 500px;
+    transform: rotate(90deg);
+    background: linear-gradient(45deg, transparent, red, blue, green, yellow, transparent); 
+    animation: animate .7s linear infinite;
+}
+
+/* Keyframes for loader animation */
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Inner circle of the loader */
+.loader:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+/* Outer glow effect for the loader */
+.loader:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
+    border-radius: 50%;
+    z-index: 1;
+    filter: blur(30px);
+}
+
+/* Styling for the main heading */
+h1 {
+    color: #ffff;
+    font-size: 60px;
+}
+
+/* Styling for the paragraph */
+p {
+    color: #ffff;
+    padding-bottom: 110px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+}
+
+/* Positioning the title */
+.title {
+    position: relative;
+    left: 200px;
+}
+
+Breakdown
+Global Styles: Resets default margin and padding, sets box-sizing to border-box.
+Body Styles: Centers content, sets minimum height to 100vh, and applies a black background.
+Loader Styles: Defines size, rotation, background gradient, and animation for the loader.
+Keyframes for Animation: Creates a hue-rotation animation.
+Loader Inner Circle: Adds an inner circle to the loader.
+Loader Outer Glow: Adds a glowing effect around the loader.
+Heading Styles: Styles the main heading.
+Paragraph Styles: Styles the paragraph.
+Title Positioning: Positions the title.
 
 
-
-
-Feel free to customize this breakdown further to fit your project's needs! If you need help with any other sections, let me know.
